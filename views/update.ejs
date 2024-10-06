@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+<main>
+  <h3>Update your blog post.</h3>
+  <form action="/posts/update/confirm/<%= post.id %>" method="post">
+    <label for="textBox" hidden>Post </label>
+    <input
+      type="text"
+      name="textBox"
+      id="textBox"
+      class="my-text-box"
+      value="<%= post.title %>"
+      required
+    />
+    <input
+      type="text"
+      name="textBox-body"
+      id="textBox-body"
+      class="my-text-box-body"
+      value="<%= post.content %>"
+      required
+    />
+    <br />
+    <input type="submit" value="Update" />
+  </form>
+  <br />
+  <a href="/">Homepage</a>
+</main>
+<%- include("partials/footer.ejs") %>

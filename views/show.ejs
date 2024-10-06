@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+  <h2>Blog Post: <%= post.id %></h2>
+  <br />
+  <h3><%= post.title %></h3>
+  <p class="post-preview"><%= post.content %></p>
+  <form action="/posts/update/<%= post.id %>" method="get">
+    <input type="submit" value="Update" />
+  </form>
+  <form action="/posts/delete/<%= post.id %>" method="post">
+    <input type="submit" value="Delete" />
+  </form>
+  <br />
+  <a href="/">Homepage</a>
+</main>
+
+<%- include("partials/footer.ejs") %>

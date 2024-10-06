@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+<main>
+  <h3>Welcome to my Blog Site!</h3>
+  <p>
+    <a href="/posts/new">Add new blogs</a>
+  </p>
+  <% if(posts.length === 0) { %>
+    <p>
+      This place looks empty, click the link above to add a new blog.
+    </p>
+    <p>
+      Note: This doesn't have a database right now. SO EVERY POST THAT YOU WRITE WILL BE LOST WITH SERVER RESTART!
+    </p>
+  <% } else { %>
+    <p>
+      <ul>
+        <% posts.forEach(function(post) { %>
+          <li class="post-preview no-bullets">
+            <strong>
+              <%= post.id %>
+            </strong>. <a href="/posts/show/<%= post.id %>"><%= post.title %></a> - <%=post.dateTime%>
+          </li>
+        <% }); %>
+      </ul>
+      </p>
+  <% } %>
+</main>
+<%- include("partials/footer.ejs") %>
