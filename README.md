@@ -73,8 +73,8 @@ This project is a simple blog web application that allows users to create, view,
 This project is open-source and available under the [MIT License](LICENSE).
 
 ## Credits
-This project is a part of my udemy course by [Angela Yu](https://github.com/angelabauer)
-The credit goes to [Ai31024](https://github.com/Ai31024) for most of the work.
-A little help for basic CSS styling, writing readme file and general guidance from [ChatGPT](https://chatgpt.com)
+- This project is a part of my udemy course by [Angela Yu](https://github.com/angelabauer)
+- The credit goes to [Ai31024](https://github.com/Ai31024) for most of the work.
+- A little help for basic CSS styling, writing readme file and general guidance from [ChatGPT](https://chatgpt.com)
 
 ---
