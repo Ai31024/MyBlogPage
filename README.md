@@ -2,15 +2,18 @@
 # Blog Web Application
 
 ## Overview
+
 This project is a simple blog web application that allows users to create, view, update, and delete blog posts. It was built using **Node.js** with the **Express.js** framework, and **EJS** templating for dynamic rendering of HTML pages. This project is a part of my journey in learning web development.
 
 ## Features
+
 - **Create Blog Posts**: Users can add new blog posts with a title and content.
 - **View Blog Posts**: All posts can be viewed on the homepage, and individual posts can be viewed on their own pages.
 - **Update Blog Posts**: Users can update existing posts by editing the title and content.
 - **Delete Blog Posts**: Posts can be deleted from the blog.
 
 ## Tech Stack
+
 - **Node.js**: JavaScript runtime for building the backend.
 - **Express.js**: Web application framework for Node.js.
 - **EJS (Embedded JavaScript)**: Template engine for rendering dynamic content.
@@ -19,29 +22,46 @@ This project is a simple blog web application that allows users to create, view,
 ## Installation
 
 ### Prerequisites
+
 - Ensure you have **Node.js** installed on your machine. You can download it from [here](https://nodejs.org/).
 
 ### Steps
+
 1. Clone the repository.
+
    ```bash
    git clone https://github.com/Ai31024/MyBlogPage.git
    ```
+
 2. Navigate into the project directory.
+
    ```bash
    cd MyBlogPage
    ```
+
 3. Install the dependencies.
+
    ```bash
    npm install
    ```
+
 4. Start the server.
+
    ```bash
    npm start
    ```
+
+   OR
+
+   ```bash
+   nodemon app.js
+   ```
+
 5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
 ## Project Structure
-```
+
+```bash
 ├── views
 │   ├── index.ejs        # Homepage with list of all blog posts
 │   ├── new.ejs          # Form to create a new blog post
@@ -54,6 +74,7 @@ This project is a simple blog web application that allows users to create, view,
 ```
 
 ## Routes
+
 - **GET /**: Displays the homepage with a list of all blog posts.
 - **GET /posts/new**: Displays a form to create a new post.
 - **POST /posts/new**: Handles submission of new post data.
@@ -62,18 +83,30 @@ This project is a simple blog web application that allows users to create, view,
 - **POST /posts/delete/:id**: Deletes a specific post.
 
 ## Screenshots
-*Add screenshots of your app here*
+
+![Homepage](./screenshots/myblogpost1.png)
+![New Blog](./screenshots/myblogpost2.png)
+![Blog Entry](./screenshots/myblogpost3.png)
+![Entered Blog](./screenshots/myblogpost4.png)
+![Blog Expand](./screenshots/myblogpost5.png)
+![Update Section](./screenshots/myblogpost6.png)
+![Updating](./screenshots/myblogpost7.png)
+![Updated Homepage](./screenshots/myblogpost8.png)
+![After Delete and more entry](./screenshots/myblogpost9.png)
 
 ## Future Improvements
+
 - **Database Integration**: Currently, the posts are stored in memory. A future improvement would be to integrate a database (e.g., MongoDB, PostgreSQL) for persistent storage.
 - **User Authentication**: Adding authentication features to allow users to sign in and manage their own posts.
 - **Styling**: Enhance the user interface with better styling and mobile responsiveness.
 
 ## License
+
 This project is open-source and available under the [MIT License](LICENSE).
 
 ## Credits
-- This project is a part of my udemy course by [Angela Yu](https://github.com/angelabauer)
+
+- This project is a part of my Udemy course by [Angela Yu](https://github.com/angelabauer)
 - The credit goes to [Ai31024](https://github.com/Ai31024) for most of the work.
 - A little help for basic CSS styling, writing readme file and general guidance from [ChatGPT](https://chatgpt.com)
 
