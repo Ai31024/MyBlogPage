@@ -48,12 +48,6 @@ This project is a simple blog web application that allows users to create, view,
 4. Start the server.
 
    ```bash
-   npm start
-   ```
-
-   OR
-
-   ```bash
    nodemon app.js
    ```
 
